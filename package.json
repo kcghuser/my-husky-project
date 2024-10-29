@@ -11,7 +11,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "npm run lint && npm run format && npm run type-check",
-    "format": "prettier --check 'app/**/*.{ts,tsx}'",
+    "format": "prettier --check 'app/**/*.{ts,tsx}'"
+    ,
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
