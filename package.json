@@ -5,11 +5,15 @@
   "husky": {
     "hooks": {}
   },
+  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "npm run lint && npm run format && npm run type-check",
+    "format": "prettier --check 'src/**/*.{ts,tsx}'",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@types/three": "^0.167.2",
